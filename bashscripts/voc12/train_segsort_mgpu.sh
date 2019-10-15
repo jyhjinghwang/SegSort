@@ -49,7 +49,7 @@ IS_BENCHMARK_2=1
 export PYTHONPATH=`pwd`:$PYTHONPATH
 
 # Set up the data directory.
-DATAROOT=/home/twke/data
+DATAROOT=/ssd/jyh/datasets
 
 # Train for the 1st stage.
 if [ ${IS_TRAIN_1} -eq 1 ]; then
@@ -124,6 +124,7 @@ if [ ${IS_BENCHMARK_1} -eq 1 ]; then
 fi
 
 
+LEARNING_RATE=2e-4
 # Train for the 2nd stage.
 if [ ${IS_TRAIN_2} -eq 1 ]; then
   python3 pyscripts/train/train_segsort_mgpu.py\
