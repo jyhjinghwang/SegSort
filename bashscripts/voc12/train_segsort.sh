@@ -142,6 +142,8 @@ if [ ${IS_BENCHMARK_1} -eq 1 ]; then
     --num_classes ${NUM_CLASSES}
 fi
 
+
+LEARNING_RATE=2e-4
 # Train for the 2nd stage.
 if [ ${IS_TRAIN_2} -eq 1 ]; then
   python3 pyscripts/train/train_segsort.py\
