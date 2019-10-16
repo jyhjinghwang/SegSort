@@ -8,7 +8,7 @@ Almost all existing deep learning approaches for semantic segmentation tackle th
 
 As a result, we present the SegSort, as a first attempt using deep learning for unsupervised semantic segmentation, achieving 76% performance of its supervised counterpart.  When supervision is available, SegSort shows consistent improvements over conventional approaches based on pixel-wise softmax training.  Additionally, our approach produces more precise boundaries and consistent region predictions.  The proposed SegSort further produces an interpretable result, as each choice of label can be easily understood from the retrieved nearest segments.
 
-SegSort is published in ICCV 2019, see [our paper](https://arxiv.org/abs/) for more details.
+SegSort is published in ICCV 2019, see [our paper](https://arxiv.org/abs/1910.06962) for more details.
 
 
 ## Codebase
@@ -66,7 +66,7 @@ source bashscripts/voc12/train_segsort_unsup.sh
 
 
 ## Citation
-If you find this code useful for your research, please consider citing our paper [SegSort: Segmentation by Discriminative Sorting of Segments](https://arxiv.org/abs/).
+If you find this code useful for your research, please consider citing our paper [SegSort: Segmentation by Discriminative Sorting of Segments](https://arxiv.org/abs/1910.06962).
 
 ```
 @inproceedings{segsort2019,
