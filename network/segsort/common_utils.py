@@ -148,7 +148,7 @@ def generate_location_features(img_dimensions, feature_type='int'):
   """Calculates location features for an image.
 
   This function generates location features for an image. The 2-D location
-  features range from -1 to 1 for y and x axes each.
+  features range from 0 to 1 for y and x axes each.
 
   Args:
     img_dimensions: A list of 2 integers for image's y and x dimension.
