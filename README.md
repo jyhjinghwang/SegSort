@@ -69,12 +69,12 @@ source bashscripts/voc12/train_segsort_unsup.sh
 If you find this code useful for your research, please consider citing our paper [SegSort: Segmentation by Discriminative Sorting of Segments](https://arxiv.org/abs/1910.06962).
 
 ```
-@inproceedings{segsort2019,
- author = {Hwang, Jyh-Jing and Yu, Stella X. and Shi, Jianbo and Collins, Maxwell D. and Yang, Tien-Ju and Zhang, Xiao and Chen, Liang-Chieh},
- title = {SegSort: Segmentation by Discriminative Sorting of Segments},
- booktitle = {International Conference on Computer Vision (ICCV)},
- month = {October},
- year = {2019}
+@inproceedings{hwang2019segsort,
+  title={SegSort: Segmentation by Discriminative Sorting of Segments},
+  author={Hwang, Jyh-Jing and Yu, Stella X and Shi, Jianbo and Collins, Maxwell D and Yang, Tien-Ju and Zhang, Xiao and Chen, Liang-Chieh},
+  booktitle={Proceedings of the IEEE International Conference on Computer Vision},
+  pages={7334--7344},
+  year={2019}
 }
 ```
 
