@@ -39,7 +39,7 @@ This release of SegSort is based on our previous published codebase [AAF](https:
 
   sbd/
     - dataset/
-      - clsimg
+      - clsimg/
   
   VOC2012/
     - JPEGImages/
