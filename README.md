@@ -33,8 +33,8 @@ This release of SegSort is based on our previous published codebase [AAF](https:
 
 * [PASCAL VOC 2012](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/)
 * Augmented PASCAL VOC training set by [SBD](http://home.bharathh.info/pubs/codes/SBD/download.html).  We process the ground truth masks, which are placed as [SegSort/dataset/voc12/sbd_clsimg.zip](https://github.com/jyhjinghwang/SegSort/blob/master/dataset/voc12/sbd_clsimg.zip).  Please unzip it and put it besides the VOC2012/ folder as sbd/dataset/clsimg/.
-* The ground truth semantic segmentation masks are reformatted as grayscale images, or you can download them [here](https://upenn.box.com/s/cke7o88jb7jsvfpsfv0ompp9ki21s25c).  Please put them under the VOC2012/ folder.
-* The oversegmentation masks (from contours) can be produced by combining any contour detectors with gPb-owt-ucm.  We provide the HED-owt-ucm masks [here](https://upenn.box.com/s/cke7o88jb7jsvfpsfv0ompp9ki21s25c).  Please put them under the VOC2012/ folder.
+* The ground truth semantic segmentation masks are reformatted as grayscale images, or you can download them [here](https://www.dropbox.com/sh/fd2m7s87gk7jeyh/AAC6tN6syhFKmEaDYCwUIgnXa?dl=0).  Please put them under the VOC2012/ folder.
+* The oversegmentation masks (from contours) can be produced by combining any contour detectors with gPb-owt-ucm.  We provide the HED-owt-ucm masks [here](https://www.dropbox.com/sh/fd2m7s87gk7jeyh/AAC6tN6syhFKmEaDYCwUIgnXa?dl=0).  Please put them under the VOC2012/ folder.
 * Dataset folder structure:
 
   sbd/
@@ -50,6 +50,8 @@ This release of SegSort is based on our previous published codebase [AAF](https:
 
 Download ResNet101.v1 from [Tensorflow-Slim](https://github.com/tensorflow/models/tree/master/research/slim).
 Please put it under a new directory SegSort/snapshots/imagenet/trained/.
+
+We also provide our SegSort models (supervised/unsupervised) trained on PASCAL VOC and results [here](https://www.dropbox.com/sh/fd2m7s87gk7jeyh/AAC6tN6syhFKmEaDYCwUIgnXa?dl=0).
 
 ## Bashscripts to Get Started
 
