@@ -10,7 +10,7 @@ This will allow the codebase to be used with TGS Salt dataset from the Kaggle Ch
 of the segmntations done on these salt images are supervised, such uility functions will allow 
 unsupervised segmentations to be done, after the input queue has been prepared.
 
-The functions can be used and exteded to other datasets also. Due to automative nature of execution of the
+The functions can be used and extended to other datasets also. Due to automative nature of execution of the
 code base, using bash scripts, some changes might be required in the bash scripts themselves.
  
 '''
@@ -54,4 +54,17 @@ Returns:
      in the current directory.
 '''
 
+def create_data_list(path="data/"):
+    TRAIN_IMAGE_DIR = path+'train/images/'
+    MASK_DIR = path+'train/masks/'
+    train_df = pd.read_csv(path+'train.csv')
+    #mask_df = pd.read_csv(path+'sample_submission.csv')
+    image_name_list = train_df['id'].tolist()
+    f1 = "train.txt"
+    f2 = "test.txt"
+    with open(f1, "a") as img:
+        for i in image_name_list:
+            s = TRAIN_IMAGE_DIR+i+".png"+" "+MASK_DIR+i+".png"+"\n"
+            img.write(s)
+    img.close()
 
