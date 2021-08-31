@@ -9,6 +9,9 @@ function ' read_images_from_disk() '.
 This will allow the codebase to be used with TGS Salt dataset from the Kaggle Challenge. Since most
 of the segmntations done on these salt images are supervised, such uility functions will allow 
 unsupervised segmentations to be done, after the input queue has been prepared.
+
+The functions can be used and exteded to other datasets also. Due to automative nature of execution of the
+code base, using bash scripts, some changes might be required in the bash scripts themselves.
  
 '''
 
