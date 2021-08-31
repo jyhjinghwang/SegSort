@@ -41,3 +41,17 @@ def create_image_tensor(path='data/'):
     np.save("x_train_images.npy", x_train)
     np.save("x_test_images.npy", x_test)
     return x_train, x_test
+   
+   
+
+'''
+create_data_list() function iterates through the image and mask directory and prepares the tensorflow input queue.
+
+Args:
+     path: string indicating the path to the directory containing train and test folders.
+Returns:
+     void: it returns nothing but creates the train.txt and test.txt files containing list of paths to train and test data, 
+     in the current directory.
+'''
+
+
